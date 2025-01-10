@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        fieldset {
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+        input,label,button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Payment From</h1>
+        <fieldset>
+            <legend><b>Card Details</b></legend>
+            <label for="name">Card holder name:</label><br>
+            <input type="text" placeholder="Enter your name" id="name" name="name"><br>
+            <label for="card">Card Type:</label><br>
+            <input type="text" name="cardtype" id="cardtype" list="cardlist">
+            <datalist id="cardlist"><br>
+                <option value="Visa">
+                <option value="MasterCard">
+                <option value="American Express">
+            </datalist><br>
+            <label for="cardnumber">Card Number:</label><br>
+            <input type="number" placeholder="Enter your card number" name="cardnumber" id="cardnumber" maxlength="16"><br>
+            <label for="cvv">CVV:</label><br>
+            <input type="number" placeholder="Enter your CVV" name="cvv" id="cvv" maxlength="3"><br>
+            <label for="expdate">Expiry Date:</label><br>
+            <input type="date" name="expdate" id="expdate"><br>
+            <button type="submit"><a href="/thanks.html" target="_blank">Pay now</a></button>
+        </fieldset>
+    </div>
+</body>
+</html>
